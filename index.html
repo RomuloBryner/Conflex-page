@@ -1,64 +1,233 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="es">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Portafolio de Rómulo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="maincont">
-        <div class="header">
-            <div class="headercontent">
-                <img src="./Logo.png" alt="logo">
-                <div class="nav">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">My Work</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Careers</a></li>
-                    </ul>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="d-flex flex-wrap justify-content-center align-items-center py-3 px-5 mb-border-bottom header">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="./assets/images/logow.png" width="50" alt="logo">
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#resume" class="nav-link">Resumen</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="#works" class="nav-link">Trabajos</a></li>
+            <li class="nav-item"><a href="#about-me" class="nav-link">Sobre mí</a></li>
+        </ul>
+    </header>
+
+    <!-- Sección Principal -->
+     <div class="hero">
+         <div class="container">
+             <div class="row flex-lg-row-reverse align-items-center g-5 py-5 my-sm-5" style="height: 100vh;">
+                 <div class="col-10 col-sm-8 col-lg-5 largeimage">
+                     <img src="./assets/images/Rectangle 7.png" class="d-block ali mx-lg-auto img-fluid" alt="astronauta"
+                         loading="lazy">
+                 </div>
+                 <div class="col-lg-7">
+                     <h1 class="display-5 fw-semibold lh-1 mb-3">Rómulo Pérez</h1>
+                     <p>Un ingeniero de software, gamer, desarrollador web habilidoso y programador.</p>
+                     <div class="d-flex flex-row gap-4 py-3">
+                         <a href="https://www.instagram.com/romulobryner/"><img src="./assets/images/Frame 15.png" alt=""></a>
+                         <a href="https://github.com/RomuloBryner"><img src="./assets/images/Frame 16.png" alt=""></a>
+                         <a href="https://do.linkedin.com/in/r%C3%B3mulo-bryner-p%C3%A9rez-8ba479225?trk=people-guest_people_search-card"><img src="./assets/images/Frame 17.png" alt=""></a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+    <!-- Resumen -->
+    <div class="container myresume" id="resume">
+        <div class="row justify-content-center align-items-center g-5 my-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-5">
+                <img src="./assets/images/me.png" heigh class="d-block ali mx-lg-auto img-fluid" alt="RomuloBryner"
+                    width="300" loading="lazy">
+            </div>
+            <div class="col-lg-7">
+                <div>
+                    <h2 class="fw-semibold lh-1 mb-3">Resumen</h2>
+                    <p class="text-justify">Soy <em><strong class="name">Romulo Bryner Pérez Valerio</strong></em>,
+                        un ingeniero de software especializado en desarrollo web y programación. Como desarrollador web
+                        en Remote Marketing Team (RMT) desde 2022, <em>me especializo en mantener y actualizar
+                            aplicaciones y sitios web para una experiencia de usuario óptima</em>. Con competencia en
+                        <strong class="name">WordPress, HTML, CSS, JavaScript, SQL, Figma, Python, C++ y C#</strong>,
+                        ofrezco
+                        soluciones funcionales e intuitivas. Mi formación académica incluye una licenciatura en
+                        ingeniería
+                        de software del Instituto Tecnológico de Santo Domingo (INTEC).
+                    </p>
                 </div>
             </div>
-            <hr>
         </div>
-        <div class="hero">
-            <div class="maintext">
-                <div class="text">
-                    <h1>Enim fermentum a purus adipiscing elementum porttitor.</h1>
-                    <p>Enim dictum lectus a vulputate suspendisse ut elit blandit faucibus. Consequat egestas nam pellentesque ut lectus leo. Purus sapien amet urna amet sed euismod tristique nunc.</p>
+
+        <!-- Habilidades -->
+        <div class="container px-4 my-5 py-5" id="skills">
+            <h2 class="fw-semibold lh-1 mb-3 py-5">Mis habilidades</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 py-5">
+                <div class="col d-flex align-items-center showlogo">
+                    <img src="./assets/images/wordpress.png" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="100" height="100" alt="wordpress">
+                    <h3 class="fw-medium mb-0 fs-4 hide">WordPress</h3>
                 </div>
-                <button>Get in touch</button>
-            </div>
-            <div class="imagery">
-                <div class="smallimage">
-                    <img src="./smallimage.png" alt="smallimage">
+                <div class="col d-flex align-items-center showlogo">
+                    <img src="./assets/images/html.png" class="bi text-body-secondary flex-shrink-0 me-3" width="100"
+                        height="100" alt="html">
+                    <div>
+                        <h3 class="fw-medium mb-0 fs-4 hide">HTML</h3>
+                    </div>
                 </div>
-                <div class="largeimage">
-                    <img src="./largeimage.png" alt="largeimage">
+                <div class="col d-flex align-items-center showlogo">
+                    <img src="./assets/images/css.png" class="bi text-body-secondary flex-shrink-0 me-3" width="100"
+                        height="100" alt="css">
+                    <div>
+                        <h3 class="fw-medium mb-0 fs-4 hide">CSS</h3>
+                    </div>
                 </div>
-                <div class="elli"> 
-                    <img src="./elli.png" alt="elli">
+                <div class="col d-flex align-items-center showlogo">
+                    <img src="./assets/images/JavaScript-logo.png" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="100" height="100" alt="javascript">
+                    <div>
+                        <h3 class="fw-medium mb-0 fs-4 hide">JavaScript</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center showlogo">
+                    <img src="./assets/images/sql.png" class="bi text-body-secondary flex-shrink-0 me-3" width="100"
+                        height="100" alt="sql">
+                    <div>
+                        <h3 class="fw-medium mb-0 fs-4 hide">SQL</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center showlogo">
+                    <img src="./assets/images/figma.png" class="bi text-body-secondary flex-shrink-0 me-3" width="100"
+                        height="100" alt="figma">
+                    <div>
+                        <h3 class="fw-medium mb-0 fs-4 hide">Figma</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center showlogo">
+                    <img src="./assets/images/python.png" class="bi text-body-secondary flex-shrink-0 me-3" width="100"
+                        height="100" alt="python">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 hide">Python</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center showlogo">
+                    <img src="./assets/images/C++_logo.png" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="100" height="110" alt="c++">
+                    <div>
+                        <h3 class="fw-medium mb-0 fs-4 hide">C++</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="showcase">
-        <div class="show1">
-            <h2>Web Development</h2>
-            <p id="p1">Enim dictum lectus a vulputate suspendisse ut elit blandit faucibus. Consequat egestas nam pellentesque ut lectus leo. Purus sapien amet urna amet sed euismod tristique nunc.</p>
-        </div>
-        <div class="show2">
-            <h2>Gaming</h2>
-            <p id="p2">Enim dictum lectus a vulputate suspendisse ut elit blandit faucibus. Consequat egestas nam pellentesque ut lectus leo. Purus sapien amet urna amet sed euismod tristique nunc.</p>
-            <img src="./R.png" alt="Gaming">
+
+    <!-- Portafolio -->
+    <div class="portafolio">
+        <div class="container py-5 my-5">
+            <h2 class="fw-semibold lh-1 mb-3 text-left">Portafolio</h2>
+            <div class="container py-5 px-5">
+                <h4 class="fw-semibold lh-1 mb-3">Desarrollo Web</h4>
+                <p id="p1">Enim dictum lectus a vulputate suspendisse ut elit blandit faucibus. Consequat egestas nam
+                    pellentesque ut lectus leo. Purus sapien amet urna amet sed euismod tristique nunc.</p>
+                <div class="row row-cols-sm-1 row-cols-md-2 justify-content-md-start g-md-5 row-cols-lg-3 py-3" id="i1">
+                    <div class="pages justify-content-center align-items-center">
+                        <a href="https://dvoices.global" target="_blank"><img src="./assets/images/dvoices.jpg"
+                                alt="página dvoices"></a>
+                        <p>Dvoices - Desarrollo (WordPress + CSS/JS)</p>
+                    </div>
+                    <div class="pages justify-content-center align-items-center">
+                        <a href="https://remotemarketingteam.com" target="_blank"><img src="./assets/images/rmt.jpg"
+                                alt="página rmt"></a>
+                        <p>Remote Marketing Team - Desarrollo (WordPress + CSS/JS)</p>
+                    </div>
+                    <div class="pages justify-content-center align-items-center">
+                        <a href="https://btig.global" target="_blank"><img src="./assets/images/btig.jpg"
+                                alt="página btig"></a>
+                        <p>BTIG - Desarrollo (WordPress + CSS/JS)</p>
+                    </div>
+                    <div class="pages justify-content-center align-items-center">
+                        <a href="https://oneorigyn.com" target="_blank"><img src="./assets/images/OO.jpg"
+                                alt="página vtest"></a>
+                        <p>One Origyn - Desarrollo y diseño (WordPress + CSS/JS + Figma)</p>
+                    </div>
+                </div>
+    
+                <!-- <h4 class="fw-semibold lh-1 mb-3">Otros Proyectos</h4>
+                <p id="p1">Enim dictum lectus a vulputate suspendisse ut elit blandit faucibus. Consequat egestas nam
+                    pellentesque ut lectus leo. Purus sapien amet urna amet sed euismod tristique nunc.</p>
+                <div class="row row-cols-sm-1 row-cols-md-2 justify-content-md-start g-md-5 row-cols-lg-3 py-3" id="i2">
+                    <div class="pages justify-content-center align-items-center">
+                        <a href="https://whalebathbuddy.com" target="_blank"><img src="./assets/images/whalebathbuddy.jpg"
+                                alt="página whalebathbuddy"></a>
+                        <p>Whale BathBuddy - Desarrollo (WordPress + CSS/JS)</p>
+                    </div>
+                </div> -->
+            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+
+     <!-- Acerca de mí -->
+<div class="container py-5 my-5" id="about-me">
+    <h2 class="fw-semibold lh-1 mb-3">Acerca de mí</h2>
+    <p>Soy un <em><strong class="name">Ingeniero de Software</strong></em> que ama jugar <em><strong class="name">fútbol</strong></em> y <em><strong class="name">videojuegos</strong></em>. Disfruto <em><strong class="name">compitiendo</strong></em> en estas áreas y haciendo amigos en el camino. Prosperé en entornos de equipo, trabajando juntos para resolver problemas mediante el análisis de cada situación y manteniendo una buena comunicación.</p>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('./assets/images/soccer.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 lh-1 fw-medium">Fútbol</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('./assets/images/RLLL.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 lh-1 fw-medium">Videojuegos</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('./assets/images/WhatsApp Image 2024-06-08 at 7.37.png'); background-repeat: no-repeat; background-size: cover;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-">
+                    <h3 class="pt-5 mt-5 mb-4 lh-1 fw-medium">Competir</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer py-3 my-5 text-center">
+        <p>&copy; 2024 Rómulo Pérez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9F6frxE6t0hB5s9NEX6k90wGx10q2zRr9zpH9F3M2U6A0ro4G7M"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93k7P7QzR+kU+W0FgT3PTP4eBB4Kl9lJRU9MLvRU1YkJk5G9Me78VM7Y3G61KP"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,10 +1,17 @@
-body, html{
+* {
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    align-content: flex-start;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    position: relative;
+
     font-family: 'Roboto', sans-serif;
-    background-color: #101511 !important;  
+    background: #262626 !important;
 }
 
 h1{
@@ -13,7 +20,7 @@ h1{
     font-weight: 600;
     font-size: 40px;
     line-height: 125%;
-    color: #E9E9E9;
+    color: #E9E9E9 !important;
 }
 h2{
     font-family: 'Montserrat';
@@ -21,7 +28,7 @@ h2{
     font-weight: 600;
     font-size: 32px;
     line-height: 125%;
-    color: #E9E9E9;
+    color: #E9E9E9 !important;
 }
 h3{
     font-family: 'Montserrat';
@@ -29,7 +36,7 @@ h3{
     font-weight: 600;
     font-size: 24px;
     line-height: 125%;
-    color: #E9E9E9;
+    color: #E9E9E9 !important;
 }
 h4{
     font-family: 'Montserrat';
@@ -37,7 +44,7 @@ h4{
     font-weight: 600;
     font-size: 18px;
     line-height: 125%;
-    color: #E9E9E9;
+    color: #E9E9E9 !important;
 }
 h5{
     font-family: 'Montserrat';
@@ -45,15 +52,15 @@ h5{
     font-weight: 600;
     font-size: 14px;
     line-height: 125%;
-    color: #E9E9E9;
+    color: #E9E9E9 !important;
 }
 p{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 200;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 125%;
-    color: #E9E9E9;
+    color: #B1B3B1 !important;
 }
 a{
     font-family: 'Poppins';
@@ -68,35 +75,15 @@ button{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 32px;
+    padding: 8px 32px;
     gap: 10px;
     border-style: none;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    width: 162px;
-    height: 50px;
-    color: #E9E9E9;
-    background: #5E8362;
+    color: #E9E9E9 !important;
+    background: #5E8362 !important;
     border-radius: 30px !important;
-}
-.maincont{
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-}
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    position: relative;
-    height: 10%;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    z-index: 10;
 }
 
 .headercontent{
@@ -112,6 +99,9 @@ button{
 
     width: 100%;
     height: 97px;
+}
+.nav{
+    z-index: 2;
 }
 .nav ul{
     /* Navigation Items */
@@ -144,26 +134,22 @@ button{
 .nav a:hover{
     color: #5E8362;
 }
+
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #262626;
+}
 .header hr{
     color: #3F553F;
     width: 100%;
     margin: 0;
 }
 .hero{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 0px 0px 120px;
-    gap: 230px;
-    height: 100%;
-    position: absolute;
-    justify-content: space-between;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    background: linear-gradient(180deg, #101511 0%, #2B332C 100%);
-    overflow: hidden;
+    padding-top: 0px;
+    width: 100%;
+    background: linear-gradient(180deg, #101511 0%, #5e695f 100%);
 }
 .maintext{
     /* Text */
@@ -177,7 +163,6 @@ button{
     gap: 40px;
 
     width: 953px;
-    height: 350px;
 }
 .maintext h1{
     font-weight: semi-bold;
@@ -199,7 +184,7 @@ button{
     right: 0px;
 }
 .smallimage img{
-    background: url(smallimage.png);
+    background: url(./assets/images/smallimage.png);
     background-repeat: no-repeat;
     position: absolute;
     height: 400px;
@@ -215,20 +200,11 @@ button{
     border-bottom: 0px;
 }
 .largeimage{
-    position: absolute;
-    right: 0px;
+    
 }
 .largeimage img{
-    background: url(largeimage.png);
-    background-repeat: no-repeat;
-    position: relative;
-    height: 800px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 96px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 0px 150px;
+
+    border-radius: 0 100px 0 100px;
 }
 .elli{
     box-sizing: border-box;
@@ -239,41 +215,60 @@ button{
     height: 400px;
     bottom: -210px;
 }
+.myresume{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 900px;
+    gap: 0;
+}
+.buttonresume{
+    display: flex;
+    justify-content: end;
+    
+}
+.name{
+    color: #a89175;
+    font-weight: 500;
+}
 .showcase{
     width: 100%;
-    height: 718px;
+    height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .show1{
     display: flex;
-    background: linear-gradient(157.56deg, rgba(43, 51, 44, 1) 15%, rgba(42, 49, 43, 0.5) 50%), url(R2.png);
+    background: linear-gradient(157.56deg, rgba(43, 51, 44, 1) 15%, rgba(42, 49, 43, 0.5) 50%), url(./assets/images/Rectangle\ 13.png);
+    background-size: cover;
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     height: inherit;
-    padding: 50px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding: 50px 0;
     justify-content: flex-start;
     clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
-    cursor: pointer;
     transition: all 1s ease;
 }
 .show2{
     display: flex;
-    background: linear-gradient(341deg, rgba(20, 32, 21, 1) 15%, rgba(17, 25, 18, 0.5) 50%), url(R.png);
+    background: linear-gradient(341deg, rgba(20, 32, 21, 1) 15%, rgba(17, 25, 18, 0.5) 50%), url(./assets/images/Rectangle\ 12.png);
+    background-size: cover;
     position: absolute;
     bottom: 0px;
     right: 0px;
     width: 100%;
     height: inherit;
-    padding: 50px;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    padding: 50px 0;
     clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
-    cursor: pointer;
     transition: all 1s ease;
 }
 .show1 h2, .show2 h2{
@@ -283,7 +278,6 @@ button{
 #p1{
     font-weight: 200;
     color: #E9E9E9;
-    width: 600px;
     display: none;
     opacity: 0;
     transition: all 1s ease;
@@ -291,17 +285,16 @@ button{
 #p2{
     font-weight: 200;
     color: #E9E9E9;
-    width: 600px;
     text-align: right;
     display: none;
     opacity: 0;
     transition: all 1s ease;
 }
-.show1 img, .show2 img{
+.show1 #i1, .show2 img{
     display: none;
 }
 .show1:hover{
-    background: linear-gradient(157.56deg, rgba(43, 51, 44, 0.8) 15%, rgba(42, 49, 43, 0.5) 50%), url(R2.png);
+    background: linear-gradient(157.56deg, rgba(17, 25, 18, 0.96) 15%, rgba(0, 0, 0, 0.96) 50%), url(./assets/images/Rectangle\ 13.png);
     clip-path: polygon(0% 0%, 160% 0%, 0% 160%);
     z-index: 3;
 }
@@ -310,7 +303,7 @@ button{
     animation: fadeIn 1s ease forwards; 
 }
 .show2:hover{
-    background: linear-gradient(341deg, rgba(20, 32, 21, 0.8) 15%, rgba(17, 25, 18, 0.5) 50%), url(R.png);
+    background: linear-gradient(341deg, rgba(17, 25, 18, 0.96) 15%, rgba(0, 0, 0, 0.96) 50%), url(./assets/images/Rectangle\ 12.png);
     clip-path: polygon(100% -60%, -60% 100%, 100% 100%); /* Cambiamos a un rectángulo el doble del triángulo original */
     z-index: 3;
     display: flex;
@@ -318,6 +311,82 @@ button{
 .show2:hover #p2{
     display: block;
     animation: fadeIn 1s ease forwards; 
+}
+.show2:hover #i2{
+    display: flex !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 0px 40px black);
+    cursor: pointer;
+    animation: fadeIn 2s ease forwards; 
+}
+.show1:hover h2{
+    text-align: left !important;
+}
+.show1:hover #i1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30vh;
+    padding: 50px;
+    justify-content: space-between;
+    animation: fadeIn 2s ease forwards; 
+}
+.show2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.show2:hover > *{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end !important;
+    transition: all 2s ease-in-out;
+}
+.show2:hover h2{
+    text-align: right !important;
+}
+.pages{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* .pages a{
+
+} */
+
+.pages:hover{
+    transform: scale(1.15);
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+.pages img{
+    width: 100%;
+}
+.drop{
+    filter: drop-shadow(0px 0px 40px black);
+}
+.showlogo{
+    justify-content: center;
+}
+.showlogo:hover .hide{
+    position: relative;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.hide{
+    position: absolute;
+    opacity: 0;
+}
+
+.portafolio{
+    background-color: #5d695e;
 }
 
 @keyframes fadeIn{
@@ -328,5 +397,20 @@ button{
     100%{
         opacity: 1;
         display: flex;
+    }
+}
+
+@media (max-width: 500px){
+    .showcase{
+        height: 100vh;
+    }
+    .p1{
+        width: 100%;
+    }
+    .hero{
+        padding-top: 100px;
+        width: 100%;
+        height: fit-content;
+        background: linear-gradient(180deg, #101511 0%, #5e695f 100%);
     }
 }
